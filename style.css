@@ -29,12 +29,45 @@ h4 {
   font-weight: 300;
 }
 
-img {
+.image {
   display: block;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .image-container {
+    flex: 1;
+  }
+  .image-resize-two {
+    width:100%;
+    height:100%;
+    aspect-ratio: 1 / 1;
+  }
+  .image {
+    display:none
+  }
+  .image-resize {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .header {
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .image-container {
+    flex: 1;
+  }
+  .image-resize {
+    display:none
+    
+  }
+  .image {
+    width:100%;
+    height:100%;
+  }
+  .image-resize-two {
+    display: none;
   }
 }
