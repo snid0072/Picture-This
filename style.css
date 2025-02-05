@@ -33,22 +33,28 @@ h4 {
   display: block;
 }
 
-@media (min-width: 960px) {
+@media (max-width: 720px) {
   .header {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 2fr);
   }
   .image-container {
     flex: 1;
   }
-  .image-resize-two {
+  .image-resize {
+    display:none
+    
+  }
+  .image-small-three {
     width:100%;
     height:100%;
-    aspect-ratio: 1 / 1;
   }
-  .image {
-    display:none
+  .image-resize-two {
+    display: none;
   }
-  .image-resize {
+  .image-resize-three {
+    display: none;
+  }
+  .image-small-four {
     display: none;
   }
 }
@@ -63,11 +69,92 @@ h4 {
     display:none
     
   }
-  .image {
+  .image-small-four {
     width:100%;
     height:100%;
   }
   .image-resize-two {
+    display: none;
+  }
+  .image-resize-three {
+    display: none;
+  }
+  .image-small-three {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-container {
+    flex: 1;
+  }
+  .image-resize {
+    width:100%;
+    height:100%;
+    aspect-ratio: 1 / 1;
+  }
+  .image-small-four {
+    display:none
+  }
+  .image-resize-two {
+    display: none;
+  }
+  .image-resize-three {
+    display: none;
+  }
+  .image-small-three {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-container {
+    flex: 1;
+  }
+  .image-resize-two {
+    width:100%;
+    height:100%;
+    aspect-ratio: 1 / 1;
+  }
+  .image-small-four {
+    display:none
+  }
+  .image-resize {
+    display: none;
+  }
+  .image-resize-three {
+    display: none;
+  }
+  .image-small-three {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-container {
+    flex: 1;
+  }
+  .image-resize-three {
+    width:100%;
+    height:100%;
+    aspect-ratio: 1 / 1;
+  }
+  .image-small-four {
+    display:none
+  }
+  .image-resize {
+    display: none;
+  }
+  .image-resize-two {
+    display: none;
+  }
+  .image-small-three {
     display: none;
   }
 }
